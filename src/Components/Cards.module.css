@@ -1,0 +1,122 @@
+.cardBody {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  margin: 1rem 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+  background-color: white;
+  padding: 1rem 0;
+}
+.CardImage {
+  position: relative;
+  height: 15rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0;
+
+  /* border: 1px solid black; */
+}
+.CardImage img {
+  height: 15rem;
+  width: 11rem;
+  /* border: 1px solid black; */
+}
+.hoverText {
+  opacity: 0;
+  transition: 250ms ease-out;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.281);
+  height: 15rem;
+  width: 100%;
+  color: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hoverText:hover {
+  opacity: 1;
+  transition: 250ms ease-in;
+}
+
+.CardText {
+  font-weight: bold;
+  /* border: 1px solid black; */
+  width: 90%;
+
+  font-size: 18px;
+}
+.CardText h2 {
+  color: green;
+}
+.CardButton {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.CardButton img {
+  width: 30px;
+  margin: auto 0;
+}
+.CardButton button {
+  border-radius: 30px;
+  width: 100%;
+  background: #ff8f00;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+  .CardImage img {
+    height: 12rem;
+    width: 9rem;
+    /* border: 1px solid black; */
+  }
+  .CardImage {
+    margin: 0.5rem 0;
+  }
+  .CardButton {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+  }
+  .CardButton button {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    font-size: 15px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+  }
+  .cardBody {
+    padding: 0.5rem 0;
+  }
+  .CardButton img {
+    width: 15px;
+  }
+}
